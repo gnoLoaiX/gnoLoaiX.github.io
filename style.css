@@ -1,8 +1,8 @@
-﻿@import url('948af41e6d10405fbfadc4eae3bfa2f9.css');
+@import url("css-family=Exo+2.css")/*tpa=https://fonts.googleapis.com/css?family=Exo+2*/;
 
 @font-face {
   font-family: "Againts";
-  src: url("../fonts/againts.eot?") format("eot"), url("../fonts/againts.woff") format("woff"), url("../fonts/againts.ttf") format("truetype"), url("../fonts/againts.svg#Againts") format("svg");
+  src: url("againts.eot-")/*tpa=https://zce.me/assets/fonts/againts.eot?*/ format("eot"), url("againts.woff")/*tpa=https://zce.me/assets/fonts/againts.woff*/ format("woff"), url("againts.ttf")/*tpa=https://zce.me/assets/fonts/againts.ttf*/ format("truetype"), url("againts.svg#Againts")/*tpa=https://zce.me/assets/fonts/againts.svg#Againts*/ format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: #454d5d 50% url(../images/01.jpg);
+  background: #454d5d 50% url(01.jpg)/*tpa=https://img.zce.me/cover/01.jpg*/;
   background-size: cover;
   justify-content: center;
   -webkit-font-smoothing: antialiased;

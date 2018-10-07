@@ -1,8 +1,3 @@
-// setTimeout(function() {
-// 	alert("注意: This is my first test website. My Blog and Github can be accessed normally. Mailbox contact me without processing server side, You can contact me:fast13469nd@gmail.com");
-// },1000);
-// 
-
 ;(function () {
   var logo = document.querySelector('.logo')
   var background = logo.querySelector('#background')
@@ -60,7 +55,6 @@
 // baidu analytics
 ;(function() {
   var hm = document.createElement('script')
-  hm.src = 'https://hm.baidu.com/hm.js?655e3d724e78de13d1a583921c7fdc19'
+  hm.src = 'hm.js-655e3d724e78de13d1a583921c7fdc19.js'/*tpa=https://hm.baidu.com/hm.js?655e3d724e78de13d1a583921c7fdc19*/
   document.body.appendChild(hm)
 })()
-
