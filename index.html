@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?eaffb0ba858e8959ce4c06c4b3d4af0c";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
 <head>
-	<meta charset="UTF-8">
-	<title>Hey Bitch, I'm Jianlong Yu</title>
-    <meta name="description" content="网页设计 前端开发 psd页面还原">
-    <!-- 申明是移动设备用的，1:1显示设备屏幕大小，禁止缩放 -->
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no"> -->
-    <link rel="shortcut icon" href="bitbug_favicon.ico"  type="image/x-icon"/>
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>Hey Bitch, I'm Jianlong Yu</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">Jianlong Yu</span> Personal Site</h1>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="https://blog.csdn.net/FAST_13469ND" target="_blank" />CSDN Blog</a></li>
-            <li><a href="https://github.com/gnoLoaiX" target="_blank">Github</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section id="showcase">
-      <div class="container">
-        <h2>I'm Jianlong Yu, A POET OF CHINA</h2>
-      </div>
-    </section>
-
-    <section id="newsletter">
-      <div class="container">
-        <h1>Contact me</h1>
-        <form>
-          <input type="email" placeholder="fast13469nd@gmail.com">
-          <button type="submit" class="button_1">Subscribe</button>
-        </form>
-      </div>
-    </section>
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="./images/logo_html.png">
-          <h3>HTML5 Markup</h3>
-          <p>HTML5 已经成为所有技术人员必会的一门标记语言,可以通过HTML5实现自己的作品!</p>
-        </div>
-        <div class="box">
-          <img src="./images/logo_css.png">
-          <h3>CSS3 Styling</h3>
-          <p>给与你最新的视觉冲击,炫酷的动画效果,更有力的宣传你的网站,让人达到过目不忘的体验!</p>
-        </div>
-        <div class="box">
-          <img src="./images/logo_brush.png">
-          <h3>Graphic Design</h3>
-          <p>设计源于创新,只要你有想法,就要大胆的实现,或许你就是下一个乔布斯!</p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <p>Jianlong Yu &copy; 2018 保留所有权利</p>
-    </footer>
+  <!-- <img class="logo" src="images/logo.svg" alt="zce.me"> -->
+  <svg class="logo" viewBox="0 0 472 450" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="shadow-filter" x="-12.7%" y="-13.4%" width="125.4%" height="126.7%" filterUnits="objectBoundingBox">
+        <feOffset dx="0" dy="0" in="SourceAlpha" result="offset-outer"></feOffset>
+        <feGaussianBlur stdDeviation="20" in="offset-outer" result="blue-outer"></feGaussianBlur>
+        <feComposite in="blue-outer" in2="SourceAlpha" operator="out" result="blue-outer"></feComposite>
+        <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="blue-outer"></feColorMatrix>
+      </filter>
+    </defs>
+    <mask id="mask" fill="white">
+      <polygon points="472 114.26 203.028853 335.74 407.1 335.74 472 449.48 64.9 449.48 0 335.74 268.971147 114.26 64.9 114.26 0 0.52 407.1 0.52"></polygon>
+    </mask>
+    <g id="background" mask="url(#mask)" fill="#339AF0">
+      <rect x="0" y="0" width="472" height="449"></rect>
+    </g>
+    <g id="shadow" mask="url(#mask)">
+      <polygon points="0 335.74 64.9 449.48 472 114.26 407.1 0.52" filter="url(#shadow-filter)"></polygon>
+    </g>
+  </svg>
+  <h1 class="title">Hey! Bitch</h1>
+  <p class="description">I'm Jianlong Yu, a poet of China</p>
+  <ul class="nav">
+    <li><a href="https://weibo.com/zceme" target="_blank">Weibo</a></li>
+    <li><a href="https://img.zce.me/wechat.jpg" target="_blank">WeChat</a></li>
+    <li><a href="https://blog.zce.me" target="_blank">Blog</a></li>
+    <li><a href="https://github.com/zce" target="_blank">GitHub</a></li>
+    <li><a href="mailto:w@zce.me">Email</a></li>
+  </ul>
+  <script src="js/app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>Hey Bitch, I'm Jianlong Yu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- <img class="logo" src="images/logo.svg" alt="zce.me"> -->
+  <svg class="logo" viewBox="0 0 472 450" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="shadow-filter" x="-12.7%" y="-13.4%" width="125.4%" height="126.7%" filterUnits="objectBoundingBox">
+        <feOffset dx="0" dy="0" in="SourceAlpha" result="offset-outer"></feOffset>
+        <feGaussianBlur stdDeviation="20" in="offset-outer" result="blue-outer"></feGaussianBlur>
+        <feComposite in="blue-outer" in2="SourceAlpha" operator="out" result="blue-outer"></feComposite>
+        <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="blue-outer"></feColorMatrix>
+      </filter>
+    </defs>
+    <mask id="mask" fill="white">
+      <polygon points="472 114.26 203.028853 335.74 407.1 335.74 472 449.48 64.9 449.48 0 335.74 268.971147 114.26 64.9 114.26 0 0.52 407.1 0.52"></polygon>
+    </mask>
+    <g id="background" mask="url(#mask)" fill="#339AF0">
+      <rect x="0" y="0" width="472" height="449"></rect>
+    </g>
+    <g id="shadow" mask="url(#mask)">
+      <polygon points="0 335.74 64.9 449.48 472 114.26 407.1 0.52" filter="url(#shadow-filter)"></polygon>
+    </g>
+  </svg>
+  <h1 class="title">Hey! Bitch</h1>
+  <p class="description">I'm Jianlong Yu, a poet of China</p>
+  <ul class="nav">
+    <li><a href="https://weibo.com/zceme" target="_blank">Weibo</a></li>
+    <li><a href="https://img.zce.me/wechat.jpg" target="_blank">WeChat</a></li>
+    <li><a href="https://blog.zce.me" target="_blank">Blog</a></li>
+    <li><a href="https://github.com/zce" target="_blank">GitHub</a></li>
+    <li><a href="mailto:w@zce.me">Email</a></li>
+  </ul>
+  <script src="js/app.js"></script>
 </body>
 </html>
