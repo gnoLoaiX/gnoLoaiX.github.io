@@ -66,7 +66,9 @@ body {
   justify-content: center;
   animation: fadeIn 1s ease .5s forwards;
 }
-
+ul.nav {
+    margin-bottom: 40px;
+}
 .nav li + li::before {
   margin: .5rem;
   content: "·";
