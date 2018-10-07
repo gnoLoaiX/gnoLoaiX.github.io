@@ -60,14 +60,11 @@ body {
 
 .nav {
   display: flex;
-  margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
   justify-content: center;
   animation: fadeIn 1s ease .5s forwards;
-}
-ul.nav {
-    margin-bottom: 40px;
 }
 .nav li + li::before {
   margin: .5rem;
