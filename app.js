@@ -58,3 +58,40 @@
   hm.src = 'hm.js-655e3d724e78de13d1a583921c7fdc19.js'/*tpa=https://hm.baidu.com/hm.js?655e3d724e78de13d1a583921c7fdc19*/
   document.body.appendChild(hm)
 })()
+
+;(function () {
+  /*h5  geolocation */
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(function (position) {
+      /*获取定位成功回调函数*/
+      /*定位数据*/
+      alert(position);
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+
+      // 这些都是写死--百度地图提供的代码
+      var map = new BMap.Map("container"); // container表示显示哪个容器
+      // 把经度纬度传给百度
+      /*40.1691162668,116.6348530780*/
+      var point = new BMap.Point(longitude, latitude);
+      //默认的比例
+      map.centerAndZoom(point, 20);
+      //添加鼠标滚动缩放
+      map.enableScrollWheelZoom();
+      // 只写上面三行就可出现地图了，并且会定位
+      // 定义好了一个图片标记
+      var myIcon = new BMap.Icon("1.png", new BMap.Size(128, 128));
+      // 创建标注
+      var marker = new BMap.Marker(point, {icon: myIcon});
+      map.addOverlay(marker);
+      //点击地图，获取经纬度坐标
+      map.addEventListener("click",function(e){
+        console.log("经度坐标："+e.point.lng+" 纬度坐标："+e.point.lat);
+      });
+    }, function (error) {
+      /*获取定位失败回调函数*/
+      /*失败原因*/
+      alert(error)
+    });
+  }
+})()
